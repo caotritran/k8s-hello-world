@@ -1,10 +1,10 @@
 kind: Service
 apiVersion: v1
 metadata:
-  name: ngnix
+  name: nginx
 spec:
   selector:
-    app: ngnix
+    app: nginx
   ports:
     - name: nginxport
       protocol: tcp
