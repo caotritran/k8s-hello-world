@@ -1,3 +1,5 @@
 name: nginx-dev
 scale: 2
 tag: "1.19"
+port: 4141
+domain: dev.example.com
