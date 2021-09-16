@@ -1,0 +1,6 @@
+name: NginxHelmDemo
+version: 1.0.0
+description: Demo of nginx deployment using helm charts
+maintainers:
+  - name: tritran
+  - email: caotritran.14@gmail.com
