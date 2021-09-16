@@ -1,17 +1,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
+  labels:
+    app: nginx
   name: nginx
-  namespace: {{.Values.namespace}}
 spec:
-  replicas: {{.Values.scale}}
+  replicas: {{.Values.scale)}
+  selector:
+    matchLabels:
+      app: nginx
   template:
     metadata:
       labels:
         app: nginx
     spec:
       containers:
-        - name: nginx
-          image: nginx:{{.Values.tag}}
-          ports:
-            - containerPort: 80
+      - image: nginx:{{.Values.tag}}
+        name: nginx
+        ports:
+          - containerPort: 80
+
