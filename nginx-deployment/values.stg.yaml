@@ -3,3 +3,4 @@ scale: 3
 tag: "1.17"
 port: 4242
 domain: stg.example.com
+ingressname: ingress-namebased-stg

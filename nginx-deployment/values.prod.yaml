@@ -3,3 +3,4 @@ scale: 5
 tag: "1.16"
 port: 4343
 domain: prod.example.com
+ingressname: ingress-namebased-prod
