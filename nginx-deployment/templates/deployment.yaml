@@ -1,7 +1,8 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: ngnix
+  name: nginx
+  namespace: {{.Values.namespace}}
 spec:
   replicas: {{.Values.scale}}
   template:
